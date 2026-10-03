@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agents Template Showcase</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#080b14;color:#fff;min-height:100vh}
+.hero{padding:70px 8%;background:linear-gradient(135deg,#10162b,#241448,#08121f);text-align:center}
+.hero h1{font-size:48px;margin-bottom:15px}
+.hero p{color:#b7bfd3;max-width:700px;margin:auto;line-height:1.7}
+.container{max-width:1200px;margin:auto;padding:50px 8%}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:#111725;border:1px solid #293149;border-radius:20px;padding:30px;transition:.3s;box-shadow:0 15px 40px #0005}
+.card:hover{transform:translateY(-8px);border-color:#8b5cf6}
+.icon{font-size:38px;margin-bottom:20px}
+.card h2{margin-bottom:12px}
+.card p{color:#aeb7ca;line-height:1.6;min-height:75px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.tag{background:#202940;color:#c9b8ff;padding:6px 10px;border-radius:20px;font-size:12px}
+.btn{display:block;text-align:center;text-decoration:none;background:#7c3aed;color:white;padding:13px;border-radius:10px;font-weight:bold}
+.btn:hover{background:#9b63ff}
+footer{text-align:center;color:#717b91;padding:30px}
+@media(max-width:850px){.cards{grid-template-columns:1fr}.hero h1{font-size:36px}}
+</style>
+</head>
+<body>
+<section class="hero">
+<h1>AI Agents Template Showcase</h1>
+<p>Explore three independent AI Agent interface templates created from the AI Agents models listed in the assignment. Each card opens a complete working template.</p>
+</section>
+<main class="container">
+<div class="cards">
+<article class="card">
+<div class="icon">🤖</div>
+<h2>Agent Dashboard</h2>
+<p>A command center for monitoring agent status, tasks, performance and recent activity.</p>
+<div class="tags"><span class="tag">Dashboard</span><span class="tag">Status</span><span class="tag">Analytics</span></div>
+<a class="btn" href="agent-dashboard/index.html">Open Template</a>
+</article>
+<article class="card">
+<div class="icon">⚙️</div>
+<h2>Agent Builder</h2>
+<p>A configuration interface for creating agents, selecting capabilities and defining workflows.</p>
+<div class="tags"><span class="tag">Builder</span><span class="tag">Configuration</span><span class="tag">Workflow</span></div>
+<a class="btn" href="agent-builder/index.html">Open Template</a>
+</article>
+<article class="card">
+<div class="icon">🛡️</div>
+<h2>Agent Approval Center</h2>
+<p>A human-in-the-loop interface for reviewing permissions, requests and agent actions.</p>
+<div class="tags"><span class="tag">Approval</span><span class="tag">Permissions</span><span class="tag">Monitoring</span></div>
+<a class="btn" href="agent-approval/index.html">Open Template</a>
+</article>
+</div>
+</main>
+<footer>AI Agents • UI Template Collection Hackathon • HTML • CSS • JavaScript</footer>
+</body>
+</html>
