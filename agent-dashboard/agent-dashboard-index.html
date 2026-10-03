@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Agent Dashboard</title><link rel="stylesheet" href="agent-dashboard-style.css">
+</head>
+<body>
+<header><div><span class="eyebrow">AI AGENT MONITOR</span><h1>Agent Command Dashboard</h1><p>Monitor autonomous agents and their live workloads.</p></div><button onclick="notify()">🔔 Notifications</button></header>
+<main>
+<section class="stats">
+<div><span>Total Agents</span><strong>24</strong><small>+12% this month</small></div>
+<div><span>Active Agents</span><strong>18</strong><small>6 idle</small></div>
+<div><span>Running Tasks</span><strong>47</strong><small>12 queued</small></div>
+<div><span>Success Rate</span><strong>96.8%</strong><small>+2.4%</small></div>
+</section>
+<section class="grid">
+<div class="panel"><div class="title"><h2>Agent Status</h2><button onclick="refreshAgents()">Refresh</button></div>
+<div class="agent"><b>Research Agent</b><span class="green">● Active</span><em>98.4%</em></div>
+<div class="agent"><b>Content Agent</b><span class="green">● Active</span><em>96.7%</em></div>
+<div class="agent"><b>Data Agent</b><span class="yellow">● Busy</span><em>94.2%</em></div>
+<div class="agent"><b>Support Agent</b><span class="green">● Active</span><em>97.1%</em></div></div>
+<div class="panel"><div class="title"><h2>Task Performance</h2><span>This Week</span></div>
+<div class="chart"><i style="height:45%"></i><i style="height:65%"></i><i style="height:55%"></i><i style="height:82%"></i><i style="height:70%"></i><i style="height:92%"></i><i style="height:64%"></i></div>
+<div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div>
+</section>
+<section class="panel"><div class="title"><h2>Recent Activity</h2><button onclick="addActivity()">Add Activity</button></div><div id="activity">
+<p>🟢 Research Agent completed market research <small>2 min ago</small></p>
+<p>🔵 Content Agent started content generation <small>5 min ago</small></p>
+<p>🟡 Data Agent is processing a large dataset <small>12 min ago</small></p>
+</div></section>
+</main>
+<script src="agent-dashboard-script.js"></script>
+</body></html>
